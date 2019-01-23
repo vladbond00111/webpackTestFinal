@@ -67,9 +67,13 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
+document.body.style.background = 'rgba(48, 213, 200, .3)';
+
 var welcome = __webpack_require__(1);
 
 welcome("home");
+
+
 
 /***/ }),
 /* 1 */
@@ -77,7 +81,7 @@ welcome("home");
 
 module.exports = function(message) {
     alert('Welcome ${message}');
-    allert('hello');
+    alert('hello');
 }
 
 /***/ })
