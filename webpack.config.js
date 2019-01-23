@@ -10,22 +10,20 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, '.bundle'),
-
-
-    // filename: 'build.js'
   },
 
 
-//   module: {
-//     rules: [
-//         {
-//           test: /\.scss$/,
-//           use: [
-//               // MiniCssExtractPlugin.loader,
-//               'style-loader',
-//               'css-loader',
-//               'sass-loader'
-//           ]
-//       }
-//     ]
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.scss$/,
+  //       use: [
+  //         // MiniCssExtractPlugin.loader,
+  //         'style-loader',
+  //         'css-loader',
+  //         'sass-loader'
+  //       ]
+  //     }
+  //   ]
+  // }
 };
