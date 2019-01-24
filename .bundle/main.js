@@ -65,13 +65,19 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-document.body.style.background = 'rgba(48, 213, 200, .3)';
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_base_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scss_base_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__scss_base_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_welcome_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_welcome_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_welcome_js__);
 
-var welcome = __webpack_require__(1);
 
-welcome("home");
+alert('hello');
+
+
 
 
 
@@ -79,10 +85,15 @@ welcome("home");
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = function(message) {
-    alert('Welcome ${message}');
-    alert('hello');
-}
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+
+alert('welcome!');
+
 
 /***/ })
 /******/ ]);

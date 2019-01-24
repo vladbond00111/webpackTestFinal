@@ -1,10 +1,12 @@
-let path = require('path');
-let webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// let webpack = require('webpack');
 
 
 module.exports = {
-  entry: './js/index.js' ,
-    // index: path.resolve(__dirname, './js/index.js'),
+  entry: './src/index.js' ,
+    // index: path.resolve(__dirname, './src/js/index.js'),
 
     
   output: {
@@ -14,14 +16,30 @@ module.exports = {
 
 
 
+
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.scss$/,
-        loader: "style!css!sass"
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ]
+
+  // module: {
+  //   loaders: [
+  //     {
+  //       test: /\.scss$/,
+  //       loader: "style!css!sass"
+  //     }
+  //   ]
+  // }
   // module: {
   //   rules: [
   //     {
